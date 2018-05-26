@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: feign-example
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: gamerlive-config-server
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /v1/api/api-docs
